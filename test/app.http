@@ -1,0 +1,8 @@
+### GET request to Hello World
+GET http://localhost:3000
+
+### GET request to PING
+GET http://localhost:3000/ping
+
+### Get SLUG
+GET http://localhost:3000/slug
