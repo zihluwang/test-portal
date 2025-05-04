@@ -1,8 +1,9 @@
 ### GET request to Hello World
-GET http://localhost:3000
+GET {{host}}
 
 ### GET request to PING
-GET http://localhost:3000/ping
+GET {{host}}/ping
 
 ### Get SLUG
-GET http://localhost:3000/slug
+@slug =
+GET {{host}}/{{slug}}

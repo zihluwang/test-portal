@@ -1,0 +1,18 @@
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Your name'
+        required: true
+        default: 'Anonymous'
+      environment:
+        description: 'Deployment environment'
+        required: false
+        default: 'staging'
+
+jobs:
+  test-curl:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Request
+        run: curl --location --request GET 'https://test.onixbyte.dev/ping'
